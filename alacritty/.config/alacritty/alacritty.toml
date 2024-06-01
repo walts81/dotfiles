@@ -27,7 +27,7 @@ family = "FiraCode Nerd Font"
 style = "Regular"
 
 [window]
-opacity = 0.85
+opacity = 0.7
 
 [[keyboard.bindings]]
 action = "CreateNewWindow"
