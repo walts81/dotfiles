@@ -1,0 +1,5 @@
+vim.cmd("hi! Normal ctermbg=none guibg=none")
+vim.cmd("hi! NormalNC ctermbg=none guibg=none")
+vim.cmd("hi! NonText ctermbg=none guibg=none")
+vim.cmd("hi! NeoTreeNormal ctermbg=none guibg=none")
+vim.cmd("hi! NeoTreeNormalNC ctermbg=none guibg=none")
