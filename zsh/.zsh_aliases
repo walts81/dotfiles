@@ -1,4 +1,4 @@
-alias ls='colorls'
+#alias ls='colorls'
 alias lsa='ls -a'
 alias l='ls -lh'
 alias la='ls -lah'
