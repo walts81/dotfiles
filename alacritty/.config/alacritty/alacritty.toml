@@ -27,7 +27,10 @@ family = "FiraCode Nerd Font"
 style = "Regular"
 
 [window]
-opacity = 0.7
+opacity = 0.85
+
+[shell]
+program = 'zsh'
 
 [[keyboard.bindings]]
 action = "CreateNewWindow"

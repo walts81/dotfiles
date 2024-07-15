@@ -1,9 +1,9 @@
-alias ls='colorls'
+#alias ls='colorls'
 alias lsa='ls -a'
 alias l='ls -lh'
 alias la='ls -lah'
 alias rcat=$(which cat)
-alias cat=$(which batcat)
+alias cat=$(which bat)
 alias catx='cat -p'
 alias ssh-srv='ssh jwalters@linux-srv1.home'
 alias dvm='~/.dotnet/dotnet-install.sh'
