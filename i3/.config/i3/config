@@ -76,6 +76,7 @@ bindsym $mod+Shift+c kill
 
 # start rofi (a program launcher)
 bindsym $mod+p exec --no-startup-id rofi -show drun
+bindsym $mod+Shift+p exec --no-startup-id rofi -show power-menu -modi power-menu:~/.config/rofi/rofi-power-menu
 bindsym $mod+space exec --no-startup-id rofi -show combi
 bindsym $mod+Tab exec --no-startup-id rofi -show window
 
