@@ -112,15 +112,14 @@ source $HOME/.zsh_aliases
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 #[[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
-#eval "$(oh-my-posh init zsh --config $HOME/.config/oh-my-posh/zen.toml)"
 eval "$(oh-my-posh init zsh --config $HOME/.config/oh-my-posh/themes/powerlevel10k_rainbow.omp.json)"
 
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 
-export PYENV_ROOT="$HOME/.pyenv"
-[[ -d $PYENV_ROOT/bin ]] && export PATH="$PYENV_ROOT/bin:$PATH"
-eval "$(pyenv init -)"
+#export PYENV_ROOT="$HOME/.pyenv"
+#[[ -d $PYENV_ROOT/bin ]] && export PATH="$PYENV_ROOT/bin:$PATH"
+#eval "$(pyenv init -)"
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
@@ -138,5 +137,3 @@ _fzf_compgen_dir() {
 }
 
 source ~/.fzf-git/fzf-git.sh
-
-POWERLEVEL9K_DISABLE_CONFIGURATION_WIZARD=true
