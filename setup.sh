@@ -1,2 +1,2 @@
 #!/bin/bash
-stow -S alacritty backgrounds i3 neovim picom polybar rofi zsh
+stow -t $1 -S neovim backgrounds kitty zsh

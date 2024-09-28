@@ -7,7 +7,7 @@ alias cat=$(which batcat)
 alias catx='cat -p'
 alias ssh-srv='ssh jwalters@linux-srv1.home'
 alias dvm='~/.dotnet/dotnet-install.sh'
-alias apt='sudo nala'
+#alias apt='sudo nala'
 function zshpl() {
   sed -i -E "s/plugins=(.*)\)/plugins=\1 $1\)/" ~/.zshrc
 }
