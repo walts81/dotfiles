@@ -1,0 +1,11 @@
+tt.*
+.tests
+doc/tags
+debug
+.repro
+foo.*
+*.log
+data
+
+# Lazy.nvim plugin lockfile (frequently changes)
+lazy-lock.json
