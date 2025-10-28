@@ -1,0 +1,66 @@
+# Sensitive application data
+Bitwarden/
+google-chrome/
+chromium/
+spotify/
+
+# Browser sessions and cache
+brave-browser/
+firefox/
+
+# System-specific databases
+dconf/
+pulse/
+
+# Input methods (may contain personal dictionaries)
+fcitx/
+fcitx5/
+ibus/
+
+# Recently used files (contains personal paths)
+gtk-3.0/
+gtk-4.0/
+nautilus/
+
+# Machine-specific configs (use templates instead)
+**/monitors.conf
+**/envs.conf
+
+# User-specific directory paths
+user-dirs.dirs
+user-dirs.locale
+
+# Local overrides
+*.local
+*-local.conf
+
+# Application state/cache
+autostart/
+mimeapps.list
+pavucontrol.ini
+
+# Package manager cache
+yay/
+
+# System settings
+systemd/
+
+# Fonts (usually large binary files)
+*.ttf
+*.otf
+*.woff
+*.woff2
+
+# Backup files
+*.bak
+*~
+*.swp
+*.swo
+
+# OS-specific
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/
+.idea/
