@@ -103,6 +103,13 @@ else
     echo "git config.local already exists, skipping..."
 fi
 
+if [ ! -f ~/.config/hypr/envs.conf ]; then
+    echo "Creating envs.conf..."
+    touch ~/.config/hypr/envs.conf
+else
+    echo "envs.conf already exists, skipping..."
+fi
+
 echo ""
 echo "Setup complete!"
 echo ""
