@@ -25,7 +25,7 @@ PACKAGES=(
     "fastfetch"
     "terminal-configs"
     "backgrounds"
-    "zsh"
+#    "zsh"
 )
 
 # Optional packages (comment out if you don't want them)
