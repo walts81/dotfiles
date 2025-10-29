@@ -6,4 +6,8 @@
 [pull]
 	rebase = true
 [init]
-	defaultBranch = master
+  defaultBranch = master
+
+# Include local user-specific settings (not tracked in repo)
+[include]
+  path = ~/.config/git/config.local

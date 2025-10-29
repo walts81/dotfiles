@@ -25,7 +25,6 @@ nautilus/
 # Machine-specific configs (use templates instead)
 **/monitors.conf
 **/envs.conf
-git/.config/git/config
 
 # User-specific directory paths
 user-dirs.dirs
