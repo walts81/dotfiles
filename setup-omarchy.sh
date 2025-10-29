@@ -86,6 +86,23 @@ else
     echo "monitors.conf already exists, skipping..."
 fi
 
+# Handle git config.local
+if [ ! -f ~/.config/git/config.local ]; then
+    echo ""
+    echo "Git config.local not found. Let's set up your git credentials."
+    read -p "Enter your git username: " git_name
+    read -p "Enter your git email: " git_email
+
+    cat > ~/.config/git/config.local << EOF
+[user]
+  name = $git_name
+  email = $git_email
+EOF
+    echo "Created ~/.config/git/config.local with your credentials"
+else
+    echo "git config.local already exists, skipping..."
+fi
+
 echo ""
 echo "Setup complete!"
 echo ""

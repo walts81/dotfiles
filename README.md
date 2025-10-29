@@ -60,6 +60,18 @@ Some files are machine-specific and excluded from git:
   - Template available as `monitors.conf.template`
   - Copy and customize for each machine
 
+- `~/.config/git/config.local` - Personal git credentials
+  - Contains your git username and email
+  - Created automatically by `setup-omarchy.sh` if it doesn't exist
+  - Manual creation:
+    ```bash
+    cat > ~/.config/git/config.local << 'EOF'
+    [user]
+      name = Your Name
+      email = your.email@example.com
+    EOF
+    ```
+
 ## Syncing Between Machines
 
 1. **Desktop**: Make changes and commit
