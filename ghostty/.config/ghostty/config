@@ -4,7 +4,7 @@ config-file = ?"~/.config/omarchy/current/theme/ghostty.conf"
 # Font
 font-family = "FiraCode Nerd Font"
 font-style = Regular
-font-size = 9
+font-size = 12
 
 # Window
 window-theme = ghostty
@@ -13,6 +13,8 @@ window-padding-y = 14
 confirm-close-surface=false
 resize-overlay = never
 gtk-toolbar-style = flat
+
+background-opacity = 0.7
 
 # Cursor styling
 cursor-style = "block"
