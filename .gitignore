@@ -33,6 +33,7 @@ user-dirs.locale
 # Local overrides
 *.local
 *-local.conf
+!omarchy-system/.local
 
 # Application state/cache
 autostart/
