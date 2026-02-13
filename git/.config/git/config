@@ -11,3 +11,7 @@
 # Include local user-specific settings (not tracked in repo)
 [include]
   path = ~/.config/git/config.local
+[core]
+	editor = nvim
+[credential "github.com"]
+	useHttpPath = true
