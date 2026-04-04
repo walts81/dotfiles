@@ -48,6 +48,7 @@ COMPONENTS:
     node                Install Node.js via Volta
     pnpm                Install pnpm package manager
     docker              Install Docker
+    ufw                 Install ufw, enable and lockdown to only allow ssh
     cleanup             Remove unnecessary apt packages
     help                Display this help message
 
@@ -112,6 +113,17 @@ install_apt() {
   logSection "Installing apt packages..."
   sudo apt update >>"$LOGFILE" 2>&1 && sudo apt install -y git curl wget stow build-essential nfs-common ripgrep bat btop ca-certificates gnupg >>"$LOGFILE" 2>&1
   echo "All apt packages installed successfully."
+}
+
+# Install and enable ufw
+install_ufw() {
+  cd ~/ || exit
+  logSection "Installing and enabling ufw..."
+  sudo apt update >>"$LOGFILE" 2>&1 && sudo apt install -y ufw >>"$LOGFILE" 2>&1
+  sudo ufw default deny incoming >>"$LOGFILE" 2>&1
+  sudo ufw default allow outgoing >>"$LOGFILE" 2>&1
+  sudo ufw allow 22/tcp >>"$LOGFILE" 2>&1
+  sudo ufw enable >>"$LOGFILE" 2>&1
 }
 
 # Install Google Chrome
@@ -483,6 +495,9 @@ main() {
       ;;
     apt)
       install_apt
+      ;;
+    ufw)
+      install_ufw
       ;;
     chrome)
       install_chrome
