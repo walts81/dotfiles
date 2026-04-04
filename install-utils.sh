@@ -31,6 +31,7 @@ OPTIONS:
 
 COMPONENTS:
     all                 Install everything (default if no argument provided)
+    headless            Install recommended packages for a headless linux server
     aliases             Set up bash aliases
     apt                 Install apt packages
     chrome              Install Google Chrome
@@ -53,6 +54,7 @@ COMPONENTS:
 EXAMPLES:
     $0                      # Install everything
     $0 all                  # Install everything
+    $0 headless             # Install all recommended packages for a headless linux server
     $0 chrome neovim        # Install only Chrome and Neovim
     $0 --force chrome       # Reinstall Chrome even if already installed
     $0 -f all               # Force reinstall everything
@@ -432,6 +434,18 @@ install_all() {
   install_cleanup
 }
 
+install_headless() {
+  install_aliases
+  install_apt
+  install_neovim
+  install_eza
+  install_fzf
+  install_zoxide
+  install_opencode
+  install_docker
+  install_cleanup
+}
+
 # Main script logic
 main() {
   # Initialize log file
@@ -460,6 +474,9 @@ main() {
       ;;
     all)
       install_all
+      ;;
+    headless)
+      install_headless
       ;;
     aliases)
       install_aliases
