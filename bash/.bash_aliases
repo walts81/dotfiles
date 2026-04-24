@@ -15,6 +15,8 @@ alias cpssh='rsync -avzP --progress -e ssh'
 alias catx='batcat -pp'
 alias cat='batcat'
 alias yt='yt-x --preview --disown-streaming-process --search'
+alias k3s-vol-map='kubectl get pv -o go-template='"'"'{{printf "%-40s %-40s %s\n" "PV" "CLAIM" "SUBDIR"}}{{range .items}}{{printf "%-40s %-40s %s\n" .metadata.name (printf "%s/%s" .spec.claimRef.namespace .spec.claimRef.name) .spec.csi.volumeAttributes.subdir}}{{end}}'"'"''
+alias k3s-stale-vols='comm -23 <(find /mnt/tank-1/k3s-data -mindepth 1 -maxdepth 1 -type d -printf "%f\n" | sort) <(kubectl get pv -o go-template="{{range .items}}{{if .spec.csi}}{{.spec.csi.volumeAttributes.subdir}}{{\"\\n\"}}{{end}}{{end}}" | sort)'
 
 alias ta='tmux attach-session -t'
 alias tl='tmux list-sessions'
