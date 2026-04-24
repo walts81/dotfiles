@@ -15,3 +15,6 @@
 	editor = nvim
 [credential "github.com"]
 	useHttpPath = true
+[user]
+	email = Xcav8r@wal7er5.com
+	name = Xcav8r
