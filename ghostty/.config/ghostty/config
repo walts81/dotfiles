@@ -1,7 +1,7 @@
 adjust-cell-height = 10%
 background-blur-radius = 60
-background-opacity = 0.85
-bold-is-bright = false
+background-opacity = 0.6
+#bold-is-bright = false
 confirm-close-surface = false
 cursor-style = bar
 font-family = FiraCode Nerd Font
